@@ -1,5 +1,14 @@
 function findAccountById(accounts, id) {
   // YOUR SOLUTION HERE
+  const findAccountById = (accounts, id) => accounts.find(account => account.id === id);
+const accounts = [
+  { id: "5f446f2ecfaf0310387c9603", name: { first: "Esther", last: "Tucker" } },
+  { id: "5f446f2e2cfa0310387c9602", name: { first: "John", last: "Doe" } }
+];
+
+const result = findAccountById(accounts, "5f446f2ecfaf0310387c9603");
+console.log(result);
+  // use of a Arrow function, while the "id" is a variation of provided example.
   // Hint: You can use the [`find()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) method here. 
 }
 
